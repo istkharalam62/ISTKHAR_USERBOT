@@ -28,7 +28,7 @@ else:
     )
 
 @Client.on_message(
-    filters.command(["alive", "shivop"], ".") & (filters.me | filters.user(SUDO_USER))
+    filters.command(["alive", "python"], ".") & (filters.me | filters.user(SUDO_USER))
 )
 async def alive(client: Client, message: Message):
     xx = await message.reply_text("⚡️")
