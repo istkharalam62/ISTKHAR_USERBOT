@@ -11,13 +11,13 @@ from RAUSHAN.helper.PyroHelpers import ReplyCheck
 from RAUSHAN.plugins.help import add_command_help
 from RAUSHAN.plugins.bot.inline import get_readable_time
 
-alive_logo = ALIVE_PIC or "https://graph.org/file/c6a2ed96648fd03377dc9.jpg"
+alive_logo = ALIVE_PIC or "https://files.catbox.moe/mampxp.jpg"
 
 if ALIVE_TEXT:
    txt = ALIVE_TEXT
 else:
     txt = (
-        f"** ⚡️ 𝗔𝗟𝗣𝗛𝗔 ⚡️ **\n\n"
+        f"** ⚡️ 𝐒 𝐀 𝐓 𝐘 𝐀 ⚡️ **\n\n"
         f"❏ **𝐕ᴇʀsɪᴏɴ**: `2.1`\n"
         f"├• **𝐔ᴘᴛɪᴍᴇ**: `{str(datetime.now() - START_TIME).split('.')[0]}`\n"
         f"├• **𝐏ʏᴛʜᴏɴ**: `{python_version()}`\n"
