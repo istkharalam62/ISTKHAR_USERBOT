@@ -34,7 +34,7 @@ async def mention_user(bot: Client, message: Message):
 @Client.on_message(filters.command("hmention", ".") & filters.me)
 async def hidden_mention(bot: Client, message: Message):
     if len(message.command) < 3:
-        await message.edit("Incorrect format\nExample: .hmention @Athfan")
+        await message.edit("Incorrect format\nExample: .hmention @UTTAM470")
         await asyncio.sleep(3)
         await message.delete()
         return
