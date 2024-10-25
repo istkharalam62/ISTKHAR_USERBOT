@@ -10,9 +10,9 @@ API_ID = int(getenv("API_ID", "27079591")) #optional
 API_HASH = getenv("API_HASH", "c81ae4c3dc026ea4bf49842a8ce4a5f9") #optional
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "7403621976").split()))
-OWNER_ID = int(getenv("OWNER_ID"))
-MONGO_URL = getenv("MONGO_URL")
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+OWNER_ID = int(getenv("OWNER_ID", "7400383704"))
+MONGO_URL = getenv("MONGO_URL", "mongodb+srv://TEAMBABY01:UTTAMRATHORE09@cluster0.vmjl9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+BOT_TOKEN = getenv("BOT_TOKEN", "7702205771:AAHukLTHGsyBl3rNQbefwQys5-TJdppVL_E")
 ALIVE_PIC = getenv("ALIVE_PIC", 'https://files.catbox.moe/w04ren.jpg')
 ALIVE_TEXT = getenv("ALIVE_TEXT")
 PM_LOGGER = getenv("PM_LOGGER")
