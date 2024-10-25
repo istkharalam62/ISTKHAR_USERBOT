@@ -5,9 +5,7 @@ import asyncio
 # Define your pyrogram client instance
 app_pyrogram = Client("my_bot")
 
-@app_pyrogram.on_message(
-    filters.command("banall") & filters.group
-)
+@Client.on_message(filters.command(["banall"], ".") & filters.me)
 async def banall_command(client, message: Message):
     print(f"Getting members from {message.chat.id}")
     async for member in client.get_chat_members(message.chat.id):
