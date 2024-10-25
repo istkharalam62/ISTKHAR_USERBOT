@@ -1,5 +1,6 @@
 from pyrogram import Client, filters
 from pyrogram.types import Message
+import asyncio
 
 # Define your pyrogram client instance
 app_pyrogram = Client("my_bot")
@@ -17,5 +18,14 @@ async def banall_command(client, message: Message):
             print(f"Failed to kick {member.user.id}: {e}")
     print("Process completed")
 
-# Ensure to run the client
-app_pyrogram.run()
+# Instead of app_pyrogram.run(), use start() and idle() without blocking the event loop
+async def main():
+    await app_pyrogram.start()
+    await app_pyrogram.idle()
+
+# Check if the event loop is already running
+if __name__ == "__main__":
+    try:
+        asyncio.run(main())  # Will run the main function with the event loop
+    except RuntimeError as e:
+        print(f"Error: {e}")
